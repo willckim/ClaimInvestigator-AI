@@ -1,9 +1,14 @@
 /** @type {import('next').NextConfig} */
+
+const isDev = process.env.NODE_ENV !== 'production';
+
 const nextConfig = {
   reactStrictMode: true,
-  
-  // API rewrites for development
+
+  // Only proxy API requests to localhost in DEVELOPMENT
   async rewrites() {
+    if (!isDev) return [];
+
     return [
       {
         source: '/api/:path*',
@@ -11,10 +16,13 @@ const nextConfig = {
       },
     ];
   },
-  
-  // Environment variables exposed to browser
+
+  // Environment variable exposed to browser
   env: {
-    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000',
+    // If Vercel has NEXT_PUBLIC_API_URL set, use that.
+    // Otherwise, default to localhost for dev.
+    NEXT_PUBLIC_API_URL:
+      process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000',
   },
 };
 
