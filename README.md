@@ -282,23 +282,6 @@ claim-investigator-ai/
 
 ---
 
-## 💼 Portfolio Value
-
-This project demonstrates:
-
-1. **Full-Stack Development**: Next.js 14 + FastAPI with TypeScript
-2. **AI/ML Integration**: Multi-model routing with intelligent fallbacks
-3. **Enterprise Architecture**: Privacy-first design, Docker deployment
-4. **Domain Expertise**: Deep understanding of insurance claims workflows
-5. **Production Quality**: Error handling, logging, health checks
-
-### Interview Talking Points
-
-> "I built a provider-agnostic LLM system that can swap vendors without rebuilding. The PII redactor ensures sensitive claimant data never leaves our environment unprotected."
-
-> "The multi-model routing optimizes for both quality and cost—using Claude for complex reasoning tasks and Gemini for fast extraction."
-
----
 
 ## 📄 License
 
