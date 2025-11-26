@@ -82,10 +82,34 @@ app = FastAPI(
     redoc_url="/redoc"
 )
 
-# Configure CORS
+# -------------------------------------------------------------------
+# CORS configuration
+# -------------------------------------------------------------------
+# Explicitly allow:
+# - Local dev frontend
+# - Vercel preview / main app
+# - Your custom production domain
+allowed_origins = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "https://claiminvestigator-ai.vercel.app",
+    "https://www.claiminvestigator-ai.com",
+]
+
+# If you still want to allow any additional origins from settings,
+# you can extend this list here (only if it's a list):
+try:
+    if isinstance(settings.ALLOWED_ORIGINS, (list, tuple)):
+        allowed_origins.extend(
+            o for o in settings.ALLOWED_ORIGINS if o not in allowed_origins
+        )
+except Exception:
+    # If ALLOWED_ORIGINS is not defined or not a list, just ignore it.
+    pass
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.ALLOWED_ORIGINS,
+    allow_origins=allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
