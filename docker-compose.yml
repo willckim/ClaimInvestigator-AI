@@ -1,0 +1,216 @@
+{
+  "sample_claims": [
+    {
+      "id": "sample_auto_bi_001",
+      "name": "Rear-End Collision with Soft Tissue Injuries",
+      "claim_type": "auto_bi",
+      "fnol": {
+        "date_of_loss": "2024-11-15",
+        "time_of_loss": "08:45",
+        "location": "Intersection of Main Street and Oak Avenue, Springfield, IL",
+        "description": "Claimant was stopped at a red light when insured's vehicle struck their vehicle from behind. Claimant reports neck and back pain. Police responded to the scene. Both vehicles were driveable. Claimant was transported to Springfield General Hospital by ambulance.",
+        "reported_by": "Claimant via phone",
+        "reported_date": "2024-11-15",
+        "injuries_reported": true,
+        "injury_description": "Claimant reports neck pain, back pain, and headaches. Was evaluated at ER and released with prescriptions for muscle relaxants and pain medication. Advised to follow up with primary care.",
+        "property_damage_reported": true,
+        "property_damage_description": "Damage to rear bumper, trunk lid, and tail lights of claimant's 2021 Honda Accord. Estimated repair cost $4,500.",
+        "witnesses": ["[WITNESS_1]", "[WITNESS_2]"],
+        "police_report_number": "SPD-2024-45678"
+      },
+      "policy": {
+        "policy_number": "[POLICY_NUM_001]",
+        "effective_date": "2024-06-01",
+        "expiration_date": "2025-06-01",
+        "coverage_limits": {
+          "bi_per_person": 100000,
+          "bi_per_accident": 300000,
+          "pd": 50000
+        },
+        "deductible": 500,
+        "named_insureds": ["[INSURED_A]"],
+        "additional_insureds": [],
+        "endorsements": ["Rental Reimbursement", "Roadside Assistance"]
+      },
+      "jurisdiction": "IL",
+      "expected_issues": [
+        "Soft tissue injuries - may require IME",
+        "Gap in treatment possible",
+        "Pre-existing condition inquiry needed"
+      ]
+    },
+    {
+      "id": "sample_auto_bi_002",
+      "name": "Intersection Collision - Disputed Liability",
+      "claim_type": "auto_bi",
+      "fnol": {
+        "date_of_loss": "2024-11-10",
+        "time_of_loss": "17:30",
+        "location": "Highway 101 and Commerce Drive, San Jose, CA",
+        "description": "Two-vehicle collision at intersection. Insured claims they had green light, claimant claims they had green light. Claimant's vehicle struck on driver's side. Claimant transported to hospital with reported arm fracture and lacerations.",
+        "reported_by": "Insured via mobile app",
+        "reported_date": "2024-11-10",
+        "injuries_reported": true,
+        "injury_description": "Claimant reportedly sustained fractured left arm and multiple lacerations requiring stitches. Hospitalized overnight for observation.",
+        "property_damage_reported": true,
+        "property_damage_description": "Claimant's 2019 Toyota Camry - extensive driver side damage, likely total loss. Insured's 2022 Ford F-150 - front end damage, estimated $8,000.",
+        "witnesses": ["[WITNESS_A]"],
+        "police_report_number": "SJPD-2024-112233"
+      },
+      "policy": {
+        "policy_number": "[POLICY_NUM_002]",
+        "effective_date": "2024-01-15",
+        "expiration_date": "2025-01-15",
+        "coverage_limits": {
+          "bi_per_person": 250000,
+          "bi_per_accident": 500000,
+          "pd": 100000
+        },
+        "deductible": 1000,
+        "named_insureds": ["[INSURED_B]", "[INSURED_C]"],
+        "additional_insureds": [],
+        "endorsements": []
+      },
+      "jurisdiction": "CA",
+      "expected_issues": [
+        "Disputed liability - word vs word",
+        "Need traffic camera footage",
+        "Witness statement critical",
+        "California pure comparative negligence applies",
+        "Potential serious injury - higher exposure"
+      ]
+    },
+    {
+      "id": "sample_gl_001",
+      "name": "Slip and Fall at Retail Store",
+      "claim_type": "gl",
+      "fnol": {
+        "date_of_loss": "2024-11-08",
+        "time_of_loss": "14:20",
+        "location": "ABC Grocery Store, 123 Shopping Center Blvd, Austin, TX",
+        "description": "Customer claims to have slipped on liquid in aisle 7 (cleaning products). Customer fell and reports hitting head and hip on floor. Store manager completed incident report. Ambulance was called but customer refused transport.",
+        "reported_by": "Store Manager",
+        "reported_date": "2024-11-12",
+        "injuries_reported": true,
+        "injury_description": "Claimant reports hip pain and headache. Refused ambulance at scene but later went to urgent care. X-rays taken of hip - results pending.",
+        "property_damage_reported": false,
+        "property_damage_description": "",
+        "witnesses": ["[STORE_EMPLOYEE_1]", "[CUSTOMER_WITNESS]"],
+        "police_report_number": ""
+      },
+      "policy": {
+        "policy_number": "[POLICY_GL_001]",
+        "effective_date": "2024-03-01",
+        "expiration_date": "2025-03-01",
+        "coverage_limits": {
+          "occurrence": 1000000,
+          "aggregate": 2000000,
+          "products_completed_ops": 1000000,
+          "personal_advertising_injury": 1000000
+        },
+        "deductible": 2500,
+        "named_insureds": ["ABC Grocery Inc."],
+        "additional_insureds": ["Shopping Center Holdings LLC"],
+        "endorsements": ["Liquor Liability Exclusion"]
+      },
+      "jurisdiction": "TX",
+      "expected_issues": [
+        "Late reporting - 4 days after incident",
+        "Need surveillance footage before it's overwritten",
+        "Incident report and maintenance logs needed",
+        "Open and obvious defense possible?",
+        "Prior similar incidents inquiry"
+      ]
+    },
+    {
+      "id": "sample_wc_001",
+      "name": "Warehouse Worker Back Injury",
+      "claim_type": "wc",
+      "fnol": {
+        "date_of_loss": "2024-11-14",
+        "time_of_loss": "10:15",
+        "location": "XYZ Distribution Center, 500 Industrial Parkway, Columbus, OH",
+        "description": "Employee reports injuring lower back while lifting boxes. States he was moving inventory from pallet to shelf when he felt a pop in his lower back. Reported to supervisor immediately. Sent to occupational health clinic.",
+        "reported_by": "Employer - HR Department",
+        "reported_date": "2024-11-14",
+        "injuries_reported": true,
+        "injury_description": "Lower back strain/sprain. Employee reports radiating pain to left leg. Occupational clinic prescribed muscle relaxants, placed on light duty for 2 weeks. MRI recommended if no improvement.",
+        "property_damage_reported": false,
+        "property_damage_description": "",
+        "witnesses": ["[COWORKER_1]"],
+        "police_report_number": ""
+      },
+      "policy": {
+        "policy_number": "[POLICY_WC_001]",
+        "effective_date": "2024-07-01",
+        "expiration_date": "2025-07-01",
+        "coverage_limits": {
+          "statutory": "Per Ohio Law",
+          "employers_liability_each_accident": 500000,
+          "employers_liability_disease_policy": 500000,
+          "employers_liability_disease_employee": 500000
+        },
+        "deductible": 0,
+        "named_insureds": ["XYZ Distribution LLC"],
+        "additional_insureds": [],
+        "endorsements": ["Voluntary Compensation"]
+      },
+      "jurisdiction": "OH",
+      "expected_issues": [
+        "Pre-existing back condition inquiry",
+        "Wage statement needed for TTD calculation",
+        "Safety training documentation",
+        "Lifting protocol compliance",
+        "Potential for surgery if disc involvement"
+      ]
+    },
+    {
+      "id": "sample_property_001",
+      "name": "Water Damage from Burst Pipe",
+      "claim_type": "property",
+      "fnol": {
+        "date_of_loss": "2024-11-13",
+        "time_of_loss": "Unknown - discovered at 07:00",
+        "location": "456 Residential Lane, Denver, CO",
+        "description": "Homeowner discovered water damage upon waking. Pipe burst in upstairs bathroom, water leaked through ceiling to first floor. Hardwood floors, drywall, and personal property affected. Water mitigation company on site.",
+        "reported_by": "Insured via claims hotline",
+        "reported_date": "2024-11-13",
+        "injuries_reported": false,
+        "injury_description": "",
+        "property_damage_reported": true,
+        "property_damage_description": "Damage to upstairs bathroom flooring and fixtures, hallway ceiling (1st floor), living room hardwood floors, drywall in multiple rooms. Personal property including furniture and electronics affected. Mitigation in progress.",
+        "witnesses": [],
+        "police_report_number": ""
+      },
+      "policy": {
+        "policy_number": "[POLICY_HO_001]",
+        "effective_date": "2024-04-15",
+        "expiration_date": "2025-04-15",
+        "coverage_limits": {
+          "dwelling": 450000,
+          "other_structures": 45000,
+          "personal_property": 225000,
+          "loss_of_use": 90000
+        },
+        "deductible": 2500,
+        "named_insureds": ["[HOMEOWNER_A]", "[HOMEOWNER_B]"],
+        "additional_insureds": [],
+        "endorsements": ["Water Backup Coverage - $10,000", "Scheduled Personal Property"]
+      },
+      "jurisdiction": "CO",
+      "expected_issues": [
+        "Determine if sudden vs gradual leak",
+        "Maintenance vs covered peril",
+        "Water backup vs burst pipe coverage",
+        "ALE if displacement needed",
+        "Coordinate with mitigation company"
+      ]
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Synthetic sample claims for ClaimInvestigator AI testing and demonstration",
+    "note": "All names, addresses, and identifying information are fictional. These claims are for educational and testing purposes only.",
+    "created": "2024-11-20"
+  }
+}
